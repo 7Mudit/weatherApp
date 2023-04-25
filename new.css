@@ -1,0 +1,197 @@
+/* Set default font and box-sizing */
+* {
+    font-family: 'Merriweather Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Apply margin and padding reset */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the wrapper */
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style for the heading */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Style for the tab-container */
+.tab-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Style for the tab */
+.tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px 5px 0 0;
+    background-color: #eaeaea;
+    margin-right: 10px;
+}
+
+/* Style for the active tab */
+.tab.active {
+    background-color: #fff;
+}
+
+/* Style for the weather-container */
+.weather-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Style for the sub-container */
+.sub-container {
+    display: none;
+    text-align: center;
+}
+
+/* Style for the loading-container */
+.loading-container {
+    margin-top: 40px;
+}
+
+/* Style for the form-container */
+.form-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Style for the search input */
+input[data-searchInput] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+
+/* Style for the search button */
+button[type="submit"] {
+    background-color: #5c5cff;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Style for the user-info-container */
+.user-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for the name container */
+.name {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the city name */
+p[data-cityName] {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Style for the weather description */
+p[data-weatherDesc] {
+    margin-top: 10px;
+}
+
+/* Style for the temperature */
+p[data-temp] {
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* Style for the parameter container */
+.parameter-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Style for the parameter card */
+.parameter {
+    flex-basis: 30%;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style for the parameter icon */
+.parameter img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Style for the parameter label */
+.parameter p:nth-child(2) {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Style for the parameter value */
+.parameter p[data-windspeed],
+.parameter p[data-humidity],
+/* Style for the parameter value */
+.parameter p[data-windspeed],
+.parameter p[data-humidity],
+.parameter p[data-cloudiness] {
+    font-size: 24px;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+/* Style for the grant location container */
+.grant-location-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for the grant location image */
+.grant-location-container img {
+    margin-bottom: 10px;
+}
+
+/* Style for the grant location text */
+.grant-location-container p {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+/* Style for the grant access button */
+.btn[data-grantAccess] {
+    background-color: #5c5cff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Show active sub-container */
+.sub-container.active {
+    display: block;
+}
